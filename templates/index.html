@@ -1,0 +1,305 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>medicolo</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+            integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+            integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+            crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<!-- section hero -->
+<section class="hero container-fluid">
+    <div class="alert alert-success alert-dismissible fade alert-message">
+        <strong>Your email was saved,</strong> we will inform you soon about first version
+    </div>
+    <div class="cover row">
+        <!-- menu -->
+        <div class="row menu">
+            <div class="col-md-2 offset-md-2">
+                <div class="logo">
+                    <a href="#"><img src="{% static 'images/logo.png' %}"></a>
+                </div>
+            </div>
+            <div class="menu-buttons col-md-6 offset-md-2">
+                <a href="#">get early acces</a>
+                <a href="#">concept</a>
+                <a href="#">team</a>
+                <a href="#">contact</a>
+            </div>
+        </div>
+        <!-- end of  menu -->
+        <div class="hero-text">
+            <h1>Welcome to medicolo</h1>
+            <div class="get-acces">
+                <form class="row">
+                    {% csrf_token %}
+                    <div class="col">
+                        <input class="email" type="email" placeholder="enter your email">
+                    </div>
+                    <div class="col">
+                        <input class="get-access" type="submit" value="Get access">
+                    </div>
+                </form>
+            </div>
+            {#			<div class="btn-acces"><button>get started</button></div>#}
+        </div>
+    </div>
+</section>
+<!-- end of hero section -->
+<!-- section concept -->
+<section class="concept caption container-fluid">
+    <h1>concept</h1>
+    <div class="concept-description">
+        <p>a cloud there the clients can save information about their health</p>
+    </div>
+    <div class="row advantages">
+        <div class="col-md-8 offset-md-2">
+            <div class="row a">
+                <div class="col">
+                    <i class="fa fa-medkit" aria-hidden="true"></i>
+                    <h4>clean tyograthy</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore.</p>
+                </div>
+                <div class="col ">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <h4>clean tyograthy</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. .</p>
+                </div>
+                <div class="col">
+                    <i class="fa fa-line-chart" aria-hidden="true"></i>
+                    <h4>clean tyograthy</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of concept section -->
+    <!-- team section -->
+    <section class="team container-fluid">
+        <div class="row caption">
+            <h1>team</h1>
+        </div>
+        <div class="concept-description">
+            <p>a cloud there the clients can save information about their health</p>
+        </div>
+        <div class="team-about row">
+            <div class="col-md-5 offset-md-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-5">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div class="team-members row">
+            <div class="col-md-8 offset-md-1">
+                <div class="row">
+                    <div class="col-md-2 offset-sm-1">
+                        <div class="member">
+                            <div class="member-photo">
+                                <img src="{% static 'images/layerm.png' %}"></img>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-about">
+                                <h2>Alex Iorgov</h2>
+                                <h3>Desinger</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 offset-sm-1 ">
+                        <div class="member">
+                            <div class="member-photo">
+                                <img src="{% static 'images/layerm.png' %}">
+                                <div class="social-icons">
+                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-about">
+                                <h2>Alex Iorgov</h2>
+                                <h3>Desinger</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 offset-sm-1 ">
+                        <div class="member">
+                            <div class="member-photo">
+                                <img src="{% static 'images/layerm.png' %}">
+                                <div class="social-icons">
+                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-about">
+                                <h2>Alex Iorgov</h2>
+                                <h3>Desinger</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 offset-sm-1">
+                        <div class="member">
+                            <div class="member-photo">
+                                <img src="{% static 'images/layerm.png' %}">
+                                <div class="social-icons">
+                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-about">
+                                <h2>Alex Iorgov</h2>
+                                <h3>Desinger</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of team section -->
+    <!-- get-in-touch -->
+    <section class="get-in-touch container-fluid">
+        <div class="row caption">
+            <h1>Already joined us</h1>
+        </div>
+        <h2>12,578</h2>
+        <div class="row caption">
+            <h1>get in touch</h1>
+        </div>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="info">
+                    <div class="adress">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <h6>adress</h6>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="info">
+                    <div class="adress">
+                        <i class="fa fa-mobile " aria-hidden="true"></i>
+                        <h6>adress</h6>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="info">
+                    <div class="adress">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <h6>adress</h6>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <!-- <div class="row"> -->
+                <form>
+                    <input type="name" placeholder="Your name">
+                    <input type="E-mail" placeholder="Your e-mail">
+                </form>
+                <!-- </div> -->
+                <!-- <div class="row"> -->
+                <form>
+                    <input type="name" placeholder="Your name">
+                    <input type="E-mail" placeholder="Your e-mail">
+                    <textarea></textarea>
+                    <input type="button" name="send messege" value="send messege" class="btn-messege">
+                </form>
+                <h6><span>*</span>We'll contact you as possible. We don't reply on Monday</h6>
+            </div>
+        </div>
+        </div>
+    </section>
+</section>
+    <!-- end of get in touch -->
+</body>
+<footer>
+    <div class="container-fluid">
+        <h2>Be the first to get acces when the app goes live!</h2>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form>
+                    <input class="email" type="e-mail" name="e-mail" placeholder="Your e-mail">
+                    <input class="get-access" type="button" value="Get access">
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="social col-md-6 offset-md-3">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-telegram" aria-hidden="true"></i>
+                <i class="fa fa-google" aria-hidden="true"></i>
+            </div>
+        </div>
+        <span>©Medicolo 2017</span>
+    </div>
+</footer>
+<script>
+    $(document).ready(function () {
+        $('.get-access').click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var input = $(this).closest('.row').find('.email');
+            $.ajax(
+                {
+                    type: "POST",
+                    beforeSend: function(request) {
+                        request.setRequestHeader("Content-Type", 'application/json; charset=utf-8');
+                        request.setRequestHeader("X-CSRFToken", $('[name=csrfmiddlewaretoken]').val());
+                    },
+                    url: '/early-access/',
+                    dataType: 'json',
+                    data: JSON.stringify({'email': input.val()}),
+                    success: function (data) {
+                        input.val('')
+                        $(".alert").addClass('show');
+                        setTimeout(function () {
+                            $(".alert-message").removeClass('show')
+                        }, 5000)
+                    }
+                }
+            )
+        })
+    })
+
+</script>
+</html>

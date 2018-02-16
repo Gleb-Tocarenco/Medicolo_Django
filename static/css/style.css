@@ -1,0 +1,525 @@
+html, body,head,section, div, h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+}
+
+/*hero*/
+
+.alert-message {
+	position: fixed !important;
+    top: 70px;
+    right: 40px;
+    z-index: 1000;
+}
+
+.hero {
+	background-color:  rgba(0, 0, 0, 0.45);
+	background-image: url(/static/images/layer.png);
+	background-size: cover;
+	width: auto;
+	height: 770px;
+	position: relative;
+	padding: 0;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.hero .cover {
+	position: absolute;
+	background-color:  rgba(0, 0, 0, 0.45);
+	height: 100%;
+	width: 100%;
+	padding: 0;
+}
+
+.menu {
+	width: 100%;
+	height: 33px;
+	position: relative;
+	margin-top: 30px;
+	z-index: 1;
+}
+
+.menu .logo {
+	width: 221px;
+	height: 33px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.menu img {
+	width: 100%;
+	height: 100%;
+
+}
+
+.menu .menu-buttons {
+	float: right;
+}
+
+.menu .menu-buttons a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	padding-right: 10px;
+	display: inline-block;
+}
+
+.menu .menu-buttons a:hover {
+	text-decoration: underline;
+}
+
+.hero .hero-text {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+
+}
+
+
+.hero .hero-text h1 {
+	text-transform: uppercase;
+	font-family: Montserrat;
+	color:  #ffffff;
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 24px;
+	padding-bottom: 3em;
+}
+
+.get-acces {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.get-acces form input{
+	border-radius: 10px;
+	background-color:  #ffffff;
+	width: 300px;
+	height: 65px;
+	font-family: RobotoSlab;
+	color:  rgba(85, 85, 85, 0.7);
+	font-size: 24px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 20px;/* Approximation due to font substitution */
+	text-align: left;
+}
+
+
+.get-acces form input[type=submit]{
+	background-color: transparent;
+	border-style: solid;
+	border-color: white;
+	text-transform: uppercase;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0px;
+    font-size: 25px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+
+}
+
+.btn-acces {
+	margin: auto;
+	position: absolute;
+	bottom: 30px;
+}
+
+.btn-acces button {
+	background-color: transparent;
+	border-color: white;
+	border-style: solid;
+	color: white;
+	vertical-align: text-bottom;
+	width: 150px;
+	height: 65px;
+	font-family: Montserrat;
+	color:  #ffffff;
+	font-size: 20px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: uppercase;
+	/*margin-top: 168px;*/
+}
+
+/*end of hero*/
+/*concept section*/
+
+
+.concept {
+	width: 1200px;
+	height: auto;
+	position: relative;
+	text-align: center;
+	/*margin-top: 50px;*/
+}
+
+
+.concept h4 {
+	font-family: Montserrat;
+	color:  rgba(85, 85, 85, 0.7);
+	font-size: 18px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 34px;/* Approximation due to font substitution */
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.concept .col p {
+	font-family: RobotoSlab;
+	color:  rgba(85, 85, 85, 0.7);
+	font-size: 18px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 24px;/* Approximation due to font substitution */
+	text-align: center;
+}
+
+.concept .advantages i{
+	font-size: 30px;
+
+}
+/*end of concept section*/
+/*team section*/
+/*repeat*/
+.caption h1 {
+	text-transform: uppercase;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	font-family: Montserrat;
+	color:  rgba(85, 85, 85, 0.7);
+	font-size: 20px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 24px;/* Approximation due to font substitution */
+	text-align: center;
+	margin: auto;
+	padding-top: 50px;
+}
+
+.caption h1:after {
+	text-align: center;
+	margin: auto;    content: '';
+    position: absolute;
+    bottom: -8px;
+    border-bottom: 2px solid #555555;
+    width: 50px;
+    left: 50%;
+    margin-left: -25px;
+    transition: 0.4s;
+}
+
+.caption h1:hover:after {
+	width: 100%;
+	left: 0;
+	margin-left: 0;
+}
+
+.concept-description {
+	margin: auto;
+	margin-top: 50px;
+}
+
+.concept-description p {
+	font-family: RobotoSlab;
+	color:  rgba(85, 85, 85, 0.7);
+	font-size: 16px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 24px;/* Approximation due to font substitution */
+	text-align: center;
+}
+
+/*repeat*/
+.team {
+	background-color:  #f8f8f8;
+}
+
+.team-about {
+	font-family: RobotoSlab;
+	color:  rgba(85, 85, 85, 0.7);
+	font-size: 14px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 24px;/* Approximation due to font substitution */
+	text-align: left;
+}
+
+ .team-members .member {
+	width: 150px;
+	height: auto;
+	margin-left: 30px;
+}
+
+
+.team-members .member .member-photo {
+	background-image: url(/static/images/member.png);
+	background-size: cover;
+	width: 150px;
+	height: 150px;
+	position: relative;
+	/*margin-left: 100px;*/
+} 
+
+
+
+.team-members .member .member-photo img {
+	opacity: 0.2;
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s;
+}
+
+.team-members .member .member-photo:hover .social-icons {
+	display: block;
+	transition: opacity .4s;
+	opacity: 1;
+}
+
+
+.team-members .member .member-photo .social-icons {
+	position: absolute;	
+	opacity: 0;
+	width: 100%;
+	text-align : center;
+	bottom: 10px;
+	color: white;
+	font-size: 18px;
+	transition: opacity .4s;
+}
+
+.team-members .member .member-photo .social-icons a {
+	color: white;
+	text-decoration: none;
+	padding: 4px;
+}
+
+.team-members .member .member-photo .social-icons a:hover {
+	background-color:	#c0301c;
+}
+
+.team-members .member .member-photo img:hover {
+	opacity: 0.7;
+}
+
+
+.team-members .member .member-photo .social-icons:hover {
+	display: block;
+}
+
+.team-members .member .member-about{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.team-members .member .member-about h2 {
+	font-family: Montserrat;
+	color:  rgba(85, 85, 85, 0.7);
+	font-size: 14px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 24px;/* Approximation due to font substitution */
+}
+
+.team-members .member .member-about h3{
+	font-family: RobotoSlab;
+	color:  rgba(85, 85, 85, 0.7);
+	font-size: 13px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 24px;/* Approximation due to font substitution */
+}
+/*end of team section*/
+
+/*get-in-touch*/
+
+.get-in-touch {
+	position: relative;
+	padding-bottom: 50px;
+	text-align: center;
+
+}
+
+
+.get-in-touch h2{
+	margin: 150px 0px 150px;
+	font-family: RobotoSlab;
+	color:  rgba(85, 85, 85, 0.7);
+	font-size: 72px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 24px;/* Approximation due to font substitution */
+	text-align: center;
+}
+
+.get-in-touch .description  {
+	font-family: RobotoSlab;
+	color:  rgba(85, 85, 85, 0.7);
+	font-size: 17px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 24px;/* Approximation due to font substitution */
+	text-align: center;
+	padding: 20px 0px 40px 0px;
+}
+
+.get-in-touch .adress{
+	margin-left: 96px;
+	display: block;
+	text-align: left;
+
+}
+
+.get-in-touch .adress h6 {
+	display: inline-block; 
+	text-transform: uppercase;
+	font-family: Montserrat;
+	color:  rgba(85, 85, 85, 0.7);
+	font-size: 14px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 30px;/* Approximation due to font substitution */
+	text-align: left;
+	
+}
+
+.get-in-touch .adress i {
+	font-size: 30px;
+	color:  #555555;
+	text-align: left;
+}
+
+.get-in-touch .info p {
+	font-family: RobotoSlab;
+	color:  rgba(85, 85, 85, 0.7);
+	font-size: 18px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 8px;/* Approximation due to font substitution */
+	text-align: center;
+}
+
+
+.get-in-touch .col-md-7 form input{
+	width: 289px;
+	margin: 10px 20px 10px 10px;
+	font-family: RobotoSlab;
+	color:  rgba(85, 85, 85, 0.7);
+	font-size: 12px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 20px;/* Approximation due to font substitution */
+	text-align: left;
+	border-color: rgba(85, 85, 85, 0.7);
+	border-style: solid;
+} 
+
+.get-in-touch .col-md-7 form textarea {
+	width: 625px;
+	height: 168px;
+	border: 2px;
+	border-color: rgba(85, 85, 85, 0.7);
+	border-style: solid;
+
+}
+
+
+.get-in-touch .col-md-7 form input[type=button]{
+	background-color: transparent;
+	float: left;
+	margin-left: 44px;
+
+}
+
+.get-in-touch .col-md-7 h6{
+	font-family: RobotoSlab;
+	color:  #555555;
+	font-size: 12px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 20px;/* Approximation due to font substitution */
+	text-align: left;
+	padding-top: 15px;
+}
+
+.get-in-touch .col-md-7 span {
+	font-family: RobotoSlab;
+	color:  #c0301c;
+	font-size: 12px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 20px;/* Approximation due to font substitution */
+	text-align: left;
+}
+
+/*end of get in touch*/
+/*footer*/
+footer {
+	background-color:  #293b5a;
+	background-size: cover;
+	text-align: center;
+	width: 100%;
+	height: 400px;
+	text-transform: uppercase;
+}
+
+footer h2{
+	color:  #ffffff;
+	font-family: Montserrat;
+	font-size: 20px;/* Approximation due to font substitution */
+	font-weight: 400;
+	padding: 30px 0px 70px 0px;
+	line-height: 24px;/* Approximation due to font substitution */
+}
+
+footer form {
+    margin: 24px 0px 105px 0px;
+}
+
+footer form input[type=e-mail]{
+	border-radius: 10px;
+	background-color:  #ffffff;
+	width: 367px;
+	height: 51px;
+}
+
+footer form input[type=button]{
+	background-color: transparent;
+	font-family: Montserrat;
+	color:  #ffffff;
+	font-size: 18.74px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 24px;/* Approximation due to font substitution */
+	text-align: center;
+	transform: scaleY(1.005);/* width and height properties ommitted due to transform */
+	border-style: solid;
+	border-color: #ffffff;
+	margin-left: 30px;
+	height: 51px;
+	width: 130px;
+}
+
+footer .social i {
+	color:  #ffffff;
+	cursor: pointer;
+	font-size: 30px;
+	width: 58px;
+	height: 12px;
+}
+
+footer .social {
+	margin-bottom: 20px;
+}
+
+footer span {
+	margin-top: 10px;
+	text-align: center;
+	font-family: RobotoSlab;
+	color:  #ffffff;
+	font-size: 12px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 20px;/* Approximation due to font substitution */
+}
+
+
+/*end of footer*/
+
