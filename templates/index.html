@@ -22,7 +22,7 @@
 <!-- section hero -->
 <section class="hero container-fluid">
     <div class="alert alert-success alert-dismissible fade alert-message">
-        <strong>Your email was saved,</strong> we will inform you soon about first version
+        <strong>Emailul dvs a fost salvat,</strong> noi o sa va contactam cind apare prima versiune.
     </div>
     <div class="cover row">
         <!-- menu -->
@@ -33,23 +33,23 @@
                 </div>
             </div>
             <div class="menu-buttons col-md-6 offset-md-2">
-                <a href="#">get early acces</a>
-                <a href="#">concept</a>
-                <a href="#">team</a>
-                <a href="#">contact</a>
+                <a href="#">Obține acces</a>
+                <a href="#">Concept</a>
+                <a href="#">Echipa</a>
+                <a href="#">Contact</a>
             </div>
         </div>
         <!-- end of  menu -->
         <div class="hero-text">
-            <h1>Welcome to medicolo</h1>
+            <h1>Bun venit la medicolo</h1>
             <div class="get-acces">
                 <form class="row">
                     {% csrf_token %}
                     <div class="col">
-                        <input class="email" type="email" placeholder="enter your email">
+                        <input class="email" type="email" placeholder="Introduce emailul tău">
                     </div>
                     <div class="col">
-                        <input class="get-access" type="submit" value="Get access">
+                        <input class="get-access" type="submit" value="Obține acces">
                     </div>
                 </form>
             </div>
@@ -62,28 +62,37 @@
 <section class="concept caption container-fluid">
     <h1>concept</h1>
     <div class="concept-description">
-        <p>a cloud there the clients can save information about their health</p>
+        <p>Aplicația cloud pentru păstrarea informație despre sănătate pacienților</p>
     </div>
     <div class="row advantages">
         <div class="col-md-8 offset-md-2">
             <div class="row a">
                 <div class="col">
                     <i class="fa fa-medkit" aria-hidden="true"></i>
-                    <h4>clean tyograthy</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore.</p>
+                    <h4>Sănătate</h4>
+                    <p>
+                        Medicolo pastreaza informatia ta medicala,
+                        Astfel , evaluarea diagnozei si stabilirea tratamentului
+                        Va fi cu mult mai exacta.</p>
                 </div>
                 <div class="col ">
                     <i class="fa fa-lock" aria-hidden="true"></i>
-                    <h4>clean tyograthy</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. .</p>
+                    <h4>Siguranța</h4>
+                    <p>
+                        Medicolo va păstra informația ta
+                        Personala în siguranța, fara a divulga careva date
+                        Care ar putea interveni in viata personala.
+                    </p>
                 </div>
                 <div class="col">
                     <i class="fa fa-line-chart" aria-hidden="true"></i>
-                    <h4>clean tyograthy</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor.</p>
+                    <h4>Dinamica</h4>
+                    <p>
+                        Medicolo va permite studiere
+                        Sănătății tale în dinamica, ceea ce va
+                        Îmbunătăți substanțial calitatea
+                        Serviciilor medicale pe care le primești
+                    </p>
                 </div>
             </div>
         </div>
@@ -92,36 +101,52 @@
     <!-- team section -->
     <section class="team container-fluid">
         <div class="row caption">
-            <h1>team</h1>
+            <h1>Echipa</h1>
         </div>
         <div class="concept-description">
-            <p>a cloud there the clients can save information about their health</p>
+            <p>Aplicația cloud pentru păstrarea informație despre sănătate pacienților</p>
         </div>
         <div class="team-about row">
-            <div class="col-md-5 offset-md-1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="col-md-10 offset-md-1">
+                <p>Echipa noastră este compusa din persoane entuziasmate, care doresc sa îmbunătățească sistemul
+                    medical din Moldova și alte tari. În echipa fac parte persoane inteligente, care au excelat în
+                    domeniile în care lucrează, au un fundal educational puternic și experiențe unice potrivite
+                    pentru a lucra la implementarea acestui proiect.
+                </p>
             </div>
-            <div class="col-md-5">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+{#            <div class="col-md-5">#}
+{#                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod#}
+{#                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,#}
+{#                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo#}
+{#                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse#}
+{#                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non#}
+{#                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>#}
+{#            </div>#}
         </div>
         <div class="team-members row">
             <div class="col-md-8 offset-md-1">
                 <div class="row">
-                    <div class="col-md-2 offset-sm-1">
+                    <div class="col-md-2 offset-sm-3">
                         <div class="member">
                             <div class="member-photo">
-                                <img src="{% static 'images/layerm.png' %}"></img>
+                                <img src="{% static 'images/ma.jpg' %}">
+                                <div class="social-icons">
+                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-about">
+                                <h2>Andreea Moraru</h2>
+                                <h3>Developer / CEO</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 offset-sm-3 ">
+                        <div class="member">
+                            <div class="member-photo">
+                                <img src="{% static 'images/ia.jpg' %}">
                                 <div class="social-icons">
                                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -135,57 +160,40 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 offset-sm-1 ">
-                        <div class="member">
-                            <div class="member-photo">
-                                <img src="{% static 'images/layerm.png' %}">
-                                <div class="social-icons">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            <div class="member-about">
-                                <h2>Alex Iorgov</h2>
-                                <h3>Desinger</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 offset-sm-1 ">
-                        <div class="member">
-                            <div class="member-photo">
-                                <img src="{% static 'images/layerm.png' %}">
-                                <div class="social-icons">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            <div class="member-about">
-                                <h2>Alex Iorgov</h2>
-                                <h3>Desinger</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 offset-sm-1">
-                        <div class="member">
-                            <div class="member-photo">
-                                <img src="{% static 'images/layerm.png' %}">
-                                <div class="social-icons">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            <div class="member-about">
-                                <h2>Alex Iorgov</h2>
-                                <h3>Desinger</h3>
-                            </div>
-                        </div>
-                    </div>
+{#                    <div class="col-md-2 offset-sm-1 ">#}
+{#                        <div class="member">#}
+{#                            <div class="member-photo">#}
+{#                                <img src="{% static 'images/layerm.png' %}">#}
+{#                                <div class="social-icons">#}
+{#                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>#}
+{#                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>#}
+{#                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>#}
+{#                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="member-about">#}
+{#                                <h2>Alex Iorgov</h2>#}
+{#                                <h3>Desinger</h3>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="col-md-2 offset-sm-1">#}
+{#                        <div class="member">#}
+{#                            <div class="member-photo">#}
+{#                                <img src="{% static 'images/layerm.png' %}">#}
+{#                                <div class="social-icons">#}
+{#                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>#}
+{#                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>#}
+{#                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>#}
+{#                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="member-about">#}
+{#                                <h2>Alex Iorgov</h2>#}
+{#                                <h3>Desinger</h3>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
                 </div>
             </div>
         </div>
@@ -194,13 +202,13 @@
     <!-- get-in-touch -->
     <section class="get-in-touch container-fluid">
         <div class="row caption">
-            <h1>Already joined us</h1>
+            <h1>Deja s-au înregistrat</h1>
         </div>
         <h2>12,578</h2>
         <div class="row caption">
-            <h1>get in touch</h1>
+            <h1>Contactează-ne</h1>
         </div>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <p class="description">Vei primi un raspuns cît mai curînd</p>
         <div class="row">
 
             <div class="col-md-4">
@@ -209,41 +217,45 @@
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                         <h6>adress</h6>
                     </div>
-                    <p>Lorem ipsum dolor sit amet</p>
-                    <p>Lorem ipsum dolor sit amet</p>
+                    <p>
+                        Chișinau, Moldova
+                    </p>
+                    <p>
+                        Studenților 9/11
+                    </p>
                 </div>
-                <div class="info">
-                    <div class="adress">
-                        <i class="fa fa-mobile " aria-hidden="true"></i>
-                        <h6>adress</h6>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet</p>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-                <div class="info">
-                    <div class="adress">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        <h6>adress</h6>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet</p>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
+{#                <div class="info">#}
+{#                    <div class="adress">#}
+{#                        <i class="fa fa-mobile " aria-hidden="true"></i>#}
+{#                        <h6>adress</h6>#}
+{#                    </div>#}
+{#                    <p>Lorem ipsum dolor sit amet</p>#}
+{#                    <p>Lorem ipsum dolor sit amet</p>#}
+{#                </div>#}
+{#                <div class="info">#}
+{#                    <div class="adress">#}
+{#                        <i class="fa fa-envelope-o" aria-hidden="true"></i>#}
+{#                        <h6>adress</h6>#}
+{#                    </div>#}
+{#                    <p>Lorem ipsum dolor sit amet</p>#}
+{#                    <p>Lorem ipsum dolor sit amet</p>#}
+{#                </div>#}
             </div>
             <div class="col-md-7">
                 <!-- <div class="row"> -->
-                <form>
-                    <input type="name" placeholder="Your name">
-                    <input type="E-mail" placeholder="Your e-mail">
-                </form>
+{#                <form>#}
+{#                    <input type="name" placeholder="email">#}
+{#                    <input type="E-mail" placeholder="Your e-mail">#}
+{#                </form>#}
                 <!-- </div> -->
                 <!-- <div class="row"> -->
                 <form>
-                    <input type="name" placeholder="Your name">
-                    <input type="E-mail" placeholder="Your e-mail">
+                    <input type="name" placeholder="numele">
+                    <input type="email" placeholder="email">
                     <textarea></textarea>
-                    <input type="button" name="send messege" value="send messege" class="btn-messege">
+                    <input type="button" name="trimite" value="Trimite mesajul" class="btn-messege">
                 </form>
-                <h6><span>*</span>We'll contact you as possible. We don't reply on Monday</h6>
+                <h6><span>*</span>O sa te contactam cît de repede posibil. Nu raspundem luni.</h6>
             </div>
         </div>
         </div>
@@ -253,18 +265,20 @@
 </body>
 <footer>
     <div class="container-fluid">
-        <h2>Be the first to get acces when the app goes live!</h2>
+        <h2>Fii primul cînd aplicația se va lansa.</h2>
         <div class="row">
             <div class="col-md-6 offset-md-3">
                 <form>
-                    <input class="email" type="e-mail" name="e-mail" placeholder="Your e-mail">
-                    <input class="get-access" type="button" value="Get access">
+                    <input class="email" type="e-mail" name="e-mail" placeholder="Emailul tău">
+                    <input class="get-access" type="button" value="Obține acess">
                 </form>
             </div>
         </div>
         <div class="row">
             <div class="social col-md-6 offset-md-3">
-                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <a href="https://www.facebook.com/medicoloo/">
+                    <i class="fa fa-facebook-official" aria-hidden="true" target="_blank"></i>
+                </a>
                 <i class="fa fa-twitter-square" aria-hidden="true"></i>
                 <i class="fa fa-telegram" aria-hidden="true"></i>
                 <i class="fa fa-google" aria-hidden="true"></i>
